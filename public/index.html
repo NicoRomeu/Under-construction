@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <title>Under construction | La Riviere Agency</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fuente Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 
   <style>
     body {
-      background: url('/background.png') no-repeat center center fixed;
-      background-size: cover;
-      background-color: rgba(58,116,164,0.05);
-      background-blend-mode: darken;
+      /* overlay gris 8% + imagen */
+      background:
+        linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.08)),
+        url('/background.png') center/cover fixed no-repeat;
       color: #222;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -41,7 +42,7 @@
       font-weight: 900;
       font-size: 3.5rem;
       color: #343F3F;
-      margin-top: 0;
+      margin: 0;
       margin-bottom: 0.3rem;
       line-height: 1.1;
     }
@@ -63,11 +64,11 @@
     }
 
     .email {
-      color: #3D6EAA;        /* azul elegante */
-      text-decoration: none; 
+      color: #3D6EAA;
+      text-decoration: none;
     }
     .email:hover {
-      color: #1a4b77;        /* tono más oscuro al pasar el ratón */
+      color: #1a4b77;
       text-decoration: underline;
     }
 
